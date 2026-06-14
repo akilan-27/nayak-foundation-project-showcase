@@ -1,17 +1,15 @@
-# 🚀 Nayak Foundation Portal
+# Nayak Foundation Portal
 
-![React](https://img.shields.io/badge/React-Frontend-blue)
-![Vite](https://img.shields.io/badge/Vite-Build_Tool-purple)
-![Supabase](https://img.shields.io/badge/Supabase-Backend-green)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-Styling-06B6D4)
-![Vercel](https://img.shields.io/badge/Vercel-Deployment-black)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+[![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat&logo=supabase&logoColor=white)](https://supabase.com/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white)](https://vercel.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-444444?style=flat)](https://opensource.org/licenses/MIT)
 
-A secure, scalable, and role-based web application designed for the Nayak Foundation to manage volunteer and internship applications efficiently. The portal streamlines applicant registration, administrative review, and user management through a centralized platform powered by React and Supabase.
+A secure, full-stack NGO management platform developed for the Nayak Foundation to streamline volunteer registration, internship applications, and role-based administrative workflows.
 
-## 🌐 Live Demo
-
-**Website:** https://nayak-foundation-portal.vercel.app/
+[🌐 Explore Live Application](https://nayak-foundation-portal.vercel.app/)
 
 ---
 
