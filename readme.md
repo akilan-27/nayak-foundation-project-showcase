@@ -546,11 +546,7 @@ Aspiring Software Developer passionate about:
 
 ### Connect With Me
 
-GitHub: https://github.com/yourusername
-
-LinkedIn: https://linkedin.com/in/yourprofile
-
-Portfolio: https://yourportfolio.com
+GitHub: https://github.com/akilan-27
 
 ---
 
