@@ -5,7 +5,6 @@
 [![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat&logo=supabase&logoColor=white)](https://supabase.com/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white)](https://vercel.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-444444?style=flat)](https://opensource.org/licenses/MIT)
 
 A secure, full-stack NGO management platform developed for the Nayak Foundation to streamline volunteer registration, internship applications, and role-based administrative workflows.
 
@@ -555,8 +554,6 @@ If you found this project helpful, please consider giving it a star on GitHub.
 ---
 
 # 📄 License
-
-This project is licensed under the MIT License.
 
 Copyright © 2026 Akilan
 
