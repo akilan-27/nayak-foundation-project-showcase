@@ -1,834 +1,572 @@
-\# Nayak Foundation Portal
+# 🚀 Nayak Foundation Portal
 
+![React](https://img.shields.io/badge/React-Frontend-blue)
+![Vite](https://img.shields.io/badge/Vite-Build_Tool-purple)
+![Supabase](https://img.shields.io/badge/Supabase-Backend-green)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-Styling-06B6D4)
+![Vercel](https://img.shields.io/badge/Vercel-Deployment-black)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 
+A secure, scalable, and role-based web application designed for the Nayak Foundation to manage volunteer and internship applications efficiently. The portal streamlines applicant registration, administrative review, and user management through a centralized platform powered by React and Supabase.
 
-A modern role-based web application developed for the Nayak Foundation to manage volunteer and internship registrations efficiently. The platform provides secure authentication, application tracking, and administrative controls through dedicated dashboards.
+## 🌐 Live Demo
 
+**Website:** https://nayak-foundation-portal.vercel.app/
 
+---
 
-\## 🌐 Live Demo
+# 📋 Table of Contents
 
+* About the Project
+* Problem Statement
+* Solution
+* Features
+* User Roles
+* Screenshots
+* System Architecture
+* Database Architecture
+* Technology Stack
+* Installation Guide
+* Environment Variables
+* Project Structure
+* Application Workflow
+* Authentication & Security
+* Deployment Process
+* Challenges Faced
+* Lessons Learned
+* Performance Optimizations
+* Future Enhancements
+* Contributors
+* Author
+* License
 
+---
 
-\*\*Website:\*\* https://nayak-foundation-portal.vercel.app/
+# 📖 About the Project
 
+The Nayak Foundation Portal is a centralized web platform developed to digitize and simplify the process of managing volunteer and internship applications.
 
+Traditionally, application management involved spreadsheets, emails, and manual record keeping, which often resulted in:
 
-\---
+* Lost or duplicated information
+* Delayed communication
+* Administrative inefficiencies
+* Lack of data security
+* Difficult applicant tracking
 
+This portal eliminates these challenges by providing a modern, role-based application management system with secure authentication and cloud-hosted infrastructure.
 
+---
 
-\# 📖 Table of Contents
+# 🚨 Problem Statement
 
+Non-profit organizations frequently struggle with managing a growing number of volunteers and interns due to outdated manual processes.
 
+The key challenges included:
 
-\* Overview
+* Manual application collection
+* Unorganized applicant records
+* No centralized database
+* Difficulty tracking applications
+* Lack of administrative controls
+* Security concerns regarding applicant data
 
-\* Problem Statement
+---
 
-\* Solution
+# 💡 Solution
 
-\* Key Features
+The Nayak Foundation Portal provides:
 
-\* User Roles
+✅ Centralized Application Management
 
-\* System Architecture
+✅ Secure Authentication System
 
-\* Technology Stack
+✅ Volunteer Registration Portal
 
-\* Database Design
+✅ Internship Registration Portal
 
-\* Authentication \& Security
+✅ Administrative Dashboard
 
-\* Project Workflow
+✅ Super Admin Control Panel
 
-\* Installation Guide
+✅ Role-Based Access Control (RBAC)
 
-\* Environment Variables
+✅ Cloud Database Integration
 
-\* Folder Structure
+✅ Responsive User Experience
 
-\* Screenshots
+---
 
-\* Challenges Faced
+# ✨ Features
 
-\* Lessons Learned
+## 🔐 Authentication
 
-\* Future Improvements
+* User Registration
+* Secure Login
+* Session Management
+* Protected Routes
+* Logout Functionality
+* Password Recovery Support
 
-\* Author
+## 👥 Volunteer Management
 
+* Volunteer Registration Form
+* Application Submission
+* Data Validation
+* Applicant Tracking
 
+## 🎓 Internship Management
 
-\---
+* Internship Application Form
+* Educational Information Collection
+* Experience Tracking
+* Application Storage
 
+## 📊 Admin Dashboard
 
+* View Applications
+* Review Applicant Information
+* Filter Records
+* Manage Volunteer Applications
+* Manage Internship Applications
 
-\# 🎯 Overview
+## ⚙️ Super Admin Dashboard
 
+* User Management
+* Role Assignment
+* Admin Promotion
+* Permission Control
+* System Administration
 
+## 📱 Responsive Design
 
-The Nayak Foundation Portal is a centralized platform that simplifies the process of managing volunteer and internship applications. Instead of handling applications manually through emails, spreadsheets, or paper forms, the system provides a secure and scalable solution where applicants and administrators can interact through a single portal.
+* Mobile Friendly
+* Tablet Compatible
+* Desktop Optimized
+* Cross-Browser Support
 
+---
 
+# 👤 User Roles
 
-The platform follows a Role-Based Access Control (RBAC) model, ensuring that each user only accesses features relevant to their responsibilities.
+## General User
 
+Users can:
 
+* Register an account
+* Login securely
+* Submit volunteer applications
+* Submit internship applications
+* Access user-specific pages
 
-\---
+---
 
+## Administrator
 
+Administrators can:
 
-\# 🚨 Problem Statement
+* Access Admin Dashboard
+* Review submitted applications
+* Manage volunteer records
+* Manage internship records
 
+---
 
+## Super Administrator
 
-Many non-profit organizations face challenges such as:
+Super Administrators can:
 
+* Access all system features
+* Manage user roles
+* Promote users to administrators
+* Oversee platform operations
+* Manage permissions
 
+---
 
-\* Managing applications manually
+# 📸 Screenshots
 
-\* Tracking applicant information across multiple sources
+## Home Page
 
-\* Maintaining secure user records
+![Home Page](screenshots/home-page.png)
 
-\* Assigning administrative responsibilities
+## Login Page
 
-\* Managing growing applicant data
+![Login Page](screenshots/login-page.png)
 
+## Volunteer Registration
 
+![Volunteer Registration](screenshots/volunteer-form.png)
 
-These issues often result in inefficiencies, data duplication, and delayed communication.
+## Internship Registration
 
+![Internship Registration](screenshots/internship-form.png)
 
+## Admin Dashboard
 
-\---
+![Admin Dashboard](screenshots/admin-dashboard.png)
 
+## Super Admin Panel
 
+![Super Admin Panel](screenshots/super-admin-dashboard.png)
 
-\# 💡 Solution
+---
 
+# 🏗 System Architecture
 
+```text
+User Browser
+      │
+      ▼
+ React Frontend
+      │
+      ▼
+ React Router
+      │
+      ▼
+ Supabase Authentication
+      │
+      ▼
+ PostgreSQL Database
+      │
+      ▼
+ Row Level Security Policies
+      │
+      ▼
+ Vercel Hosting
+```
 
-The Nayak Foundation Portal addresses these challenges by providing:
+---
 
+# 🗄 Database Architecture
 
+## Main Tables
 
-\* Centralized application management
+### Users
 
-\* Secure authentication system
+| Field      | Type      |
+| ---------- | --------- |
+| id         | UUID      |
+| email      | String    |
+| role       | String    |
+| created_at | Timestamp |
 
-\* Role-based user permissions
+### Volunteers
 
-\* Dedicated dashboards for administrators
+| Field     | Type   |
+| --------- | ------ |
+| id        | UUID   |
+| name      | String |
+| email     | String |
+| phone     | String |
+| interests | Text   |
 
-\* Real-time database integration
+### Internships
 
-\* Scalable cloud deployment
+| Field          | Type   |
+| -------------- | ------ |
+| id             | UUID   |
+| applicant_name | String |
+| email          | String |
+| qualification  | Text   |
+| experience     | Text   |
 
+---
 
+# 🛠 Technology Stack
 
-This enables the foundation to streamline operations while providing a professional application experience.
+## Frontend
 
+* React.js
+* JavaScript (ES6+)
+* Vite
+* React Router DOM
 
+## Styling
 
-\---
+* Tailwind CSS
+* CSS3
 
+## Backend
 
+* Supabase
 
-\# ✨ Key Features
+## Database
 
+* PostgreSQL
 
+## Authentication
 
-\## Authentication System
+* Supabase Auth
 
+## Animation
 
+* Framer Motion
 
-\* User Registration
+## Icons
 
-\* Secure Login
+* Lucide React
 
-\* Protected Routes
+## Hosting
 
-\* Session Management
+* Vercel
 
-\* Logout Functionality
+## Version Control
 
+* Git
+* GitHub
 
+---
 
-\## Volunteer Registration
+# ⚙ Installation Guide
 
+## 1. Clone Repository
 
+```bash
+git clone https://github.com/your-username/nayak-foundation-portal.git
+```
 
-\* Online application submission
+## 2. Navigate to Project
 
-\* Personal information collection
+```bash
+cd nayak-foundation-portal
+```
 
-\* Volunteer opportunity registration
+## 3. Install Dependencies
 
-\* Data validation
+```bash
+npm install
+```
 
+## 4. Configure Environment Variables
 
+Create a `.env` file:
 
-\## Internship Registration
+```env
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
 
+## 5. Run Development Server
 
+```bash
+npm run dev
+```
 
-\* Internship application forms
+---
 
-\* Educational information collection
+# 📂 Project Structure
 
-\* Experience tracking
+```text
+src/
+│
+├── assets/
+│
+├── components/
+│   ├── Navbar
+│   ├── Footer
+│   ├── ProtectedRoute
+│
+├── pages/
+│   ├── Home
+│   ├── Login
+│   ├── Register
+│   ├── VolunteerForm
+│   ├── InternshipForm
+│   ├── Dashboard
+│
+├── services/
+│   └── supabaseClient.js
+│
+├── hooks/
+│
+├── utils/
+│
+├── App.jsx
+│
+└── main.jsx
+```
 
-\* Application storage
+---
 
+# 🔄 Application Workflow
 
+### User Journey
 
-\## Admin Dashboard
+1. User visits portal
+2. User registers account
+3. User logs in
+4. User submits volunteer/internship application
+5. Data stored securely in Supabase
+6. Admin reviews applications
+7. Super Admin manages users and permissions
 
+---
 
+# 🔒 Authentication & Security
 
-\* View all submitted applications
+Security measures implemented:
 
-\* Manage volunteer registrations
+* Supabase Authentication
+* Protected Routes
+* Role-Based Access Control
+* Row Level Security Policies
+* Environment Variable Protection
+* Session Persistence
+* Secure API Communication
 
-\* Manage internship applications
+---
 
-\* Review applicant information
+# 🚀 Deployment Process
 
-\* Track application records
+## Development
 
-
-
-\## Super Admin Panel
-
-
-
-\* User Management
-
-\* Role Management
-
-\* Admin Creation
-
-\* Permission Control
-
-\* System Administration
-
-
-
-\## Responsive Design
-
-
-
-\* Mobile Friendly
-
-\* Tablet Compatible
-
-\* Desktop Optimized
-
-\* Modern User Interface
-
-
-
-\---
-
-
-
-\# 👥 User Roles
-
-
-
-\## General User
-
-
-
-A general user can:
-
-
-
-\* Create an account
-
-\* Login securely
-
-\* Apply for volunteer opportunities
-
-\* Apply for internships
-
-\* Access authorized pages
-
-
-
-\## Administrator
-
-
-
-An administrator can:
-
-
-
-\* Access admin dashboard
-
-\* View submitted applications
-
-\* Manage volunteer records
-
-\* Manage internship records
-
-
-
-\## Super Administrator
-
-
-
-A super administrator can:
-
-
-
-\* Access all administrative features
-
-\* Promote users to admin roles
-
-\* Manage system users
-
-\* Control permissions
-
-\* Oversee platform operations
-
-
-
-\---
-
-
-
-\# 🏗 System Architecture
-
-
-
-Frontend (React + Vite)
-
-
+Local Machine
 
 ↓
 
-React Router
-
-
+Git Repository
 
 ↓
 
-Supabase Authentication
-
-
-
-↓
-
-Supabase Database (PostgreSQL)
-
-
-
-↓
-
-Role-Based Access Control (RLS Policies)
-
-
+GitHub Repository
 
 ↓
 
 Vercel Deployment
 
+↓
 
+Production Environment
 
-\---
+### Deployment Steps
 
+1. Push code to GitHub
+2. Connect repository to Vercel
+3. Configure environment variables
+4. Deploy application
+5. Automatic updates on every push
 
+---
 
-\# 🛠 Technology Stack
+# ⚡ Performance Optimizations
 
+* Fast Vite Build System
+* Component Reusability
+* Efficient Routing
+* Lazy Loading Opportunities
+* Optimized Asset Management
+* Cloud Database Integration
 
+---
 
-\## Frontend
-
-
-
-\* React.js
-
-\* Vite
-
-\* JavaScript (ES6+)
-
-\* React Router DOM
-
-
-
-\## Styling
-
-
-
-\* Tailwind CSS
-
-\* Responsive Design Principles
-
-
-
-\## Backend Services
-
-
-
-\* Supabase Authentication
-
-\* Supabase Database
-
-\* Supabase API
-
-
-
-\## Database
-
-
-
-\* PostgreSQL
-
-
-
-\## UI Enhancements
-
-
-
-\* Framer Motion
-
-\* Lucide React Icons
-
-
-
-\## Hosting \& Deployment
-
-
-
-\* Vercel
-
-
-
-\## Version Control
-
-
-
-\* Git
-
-\* GitHub
-
-
-
-\---
-
-
-
-\# 🔐 Authentication \& Security
-
-
-
-Security was one of the primary considerations while developing this platform.
-
-
-
-Implemented measures include:
-
-
-
-\* Secure user authentication using Supabase Auth
-
-\* Protected frontend routes
-
-\* Role-based authorization
-
-\* Row Level Security (RLS) Policies
-
-\* Environment Variable Protection
-
-\* Session Handling
-
-\* Restricted administrative access
-
-
-
-\---
-
-
-
-\# ⚙️ Project Development Workflow
-
-
-
-\## Phase 1: Requirement Gathering
-
-
-
-\* Identified foundation requirements
-
-\* Defined user roles
-
-\* Planned application flow
-
-
-
-\## Phase 2: UI/UX Design
-
-
-
-\* Designed navigation structure
-
-\* Planned dashboard layouts
-
-\* Created responsive interface designs
-
-
-
-\## Phase 3: Frontend Development
-
-
-
-\* Built reusable React components
-
-\* Configured React Router
-
-\* Developed forms and dashboards
-
-
-
-\## Phase 4: Backend Integration
-
-
-
-\* Configured Supabase project
-
-\* Created database schema
-
-\* Implemented authentication
-
-\* Configured RLS policies
-
-
-
-\## Phase 5: Testing
-
-
-
-\* Authentication testing
-
-\* Form validation testing
-
-\* Role access testing
-
-\* Responsive design testing
-
-
-
-\## Phase 6: Deployment
-
-
-
-\* Connected GitHub repository
-
-\* Configured Vercel deployment
-
-\* Added production environment variables
-
-\* Published live application
-
-
-
-\---
-
-
-
-\# 📂 Folder Structure
-
-
-
-src/
-
-
-
-├── components/
-
-
-
-├── pages/
-
-
-
-├── hooks/
-
-
-
-├── services/
-
-
-
-├── utils/
-
-
-
-├── assets/
-
-
-
-├── App.jsx
-
-
-
-└── main.jsx
-
-
-
-\---
-
-
-
-\# 🚀 Installation Guide
-
-
-
-\## Clone Repository
-
-
-
-git clone <repository-url>
-
-
-
-\## Navigate To Project
-
-
-
-cd nayak-foundation-portal
-
-
-
-\## Install Dependencies
-
-
-
-npm install
-
-
-
-\## Start Development Server
-
-
-
-npm run dev
-
-
-
-\---
-
-
-
-\# 🔑 Environment Variables
-
-
-
-Create a .env file:
-
-
-
-VITE\_SUPABASE\_URL=your\_supabase\_url
-
-
-
-VITE\_SUPABASE\_ANON\_KEY=your\_supabase\_anon\_key
-
-
-
-\---
-
-
-
-\# 📸 Screenshots
-
-
-
-Add screenshots of:
-
-
-
-\* Landing Page
-
-\* Login Page
-
-\* Registration Page
-
-\* Volunteer Form
-
-\* Internship Form
-
-\* Admin Dashboard
-
-\* Super Admin Dashboard
-
-
-
-\---
-
-
-
-\# 🧩 Challenges Faced
-
-
+# 🧩 Challenges Faced
 
 During development, several challenges were encountered:
 
+* Implementing Role-Based Access Control
+* Designing Secure Database Policies
+* Managing Authentication States
+* Protecting Admin Routes
+* Creating Responsive Layouts
+* Integrating Frontend with Supabase Backend
 
+---
 
-\* Configuring Role-Based Access Control
+# 📚 Lessons Learned
 
-\* Implementing Supabase Authentication
+This project strengthened my understanding of:
 
-\* Designing Row Level Security Policies
+* React Architecture
+* State Management
+* Authentication Systems
+* Database Design
+* PostgreSQL
+* Supabase Services
+* Row Level Security
+* API Integration
+* Cloud Deployment
+* GitHub Workflow
 
-\* Managing Protected Routes
+---
 
-\* Maintaining Responsive UI Across Devices
+# 🔮 Future Enhancements
 
-\* Integrating Frontend with Backend Services
+## Email Automation
 
+* Application Status Emails
+* Admin Notifications
+* Welcome Emails
 
+## Analytics Dashboard
 
-\---
+* Volunteer Statistics
+* Internship Trends
+* Monthly Reports
 
+## Data Export
 
+* CSV Export
+* Excel Reports
+* PDF Reports
 
-\# 📚 Lessons Learned
+## User Profiles
 
+* Resume Upload
+* Skill Tracking
+* Application History
 
+## Advanced Features
 
-This project helped strengthen my understanding of:
+* Dynamic Form Builder
+* Multi-language Support
+* SMS Notifications
+* Activity Logs
 
+---
 
+# 🤝 Contributors
 
-\* React Component Architecture
+Developed as part of a web development project for the Nayak Foundation.
 
-\* State Management
+Contributions, suggestions, and improvements are welcome.
 
-\* Client-Side Routing
+---
 
-\* Authentication Systems
+# 👨‍💻 Author
 
-\* Database Design
+## Akilan
 
-\* PostgreSQL
+Aspiring Software Developer passionate about:
 
-\* Supabase Services
+* Full Stack Development
+* Web Technologies
+* Database Design
+* Open Source Development
 
-\* Row Level Security
+### Connect With Me
 
-\* Deployment Pipelines
+GitHub: https://github.com/yourusername
 
-\* GitHub Collaboration Workflow
+LinkedIn: https://linkedin.com/in/yourprofile
 
+Portfolio: https://yourportfolio.com
 
+---
 
-\---
+# ⭐ Support
 
+If you found this project helpful, please consider giving it a star on GitHub.
 
+---
 
-\# 🔮 Future Improvements
-
-
-
-\## Notifications
-
-
-
-\* Email notifications for application updates
-
-\* Admin alerts
-
-
-
-\## Analytics
-
-
-
-\* Volunteer participation reports
-
-\* Internship analytics dashboard
-
-\* Application statistics
-
-
-
-\## Data Export
-
-
-
-\* CSV Export
-
-\* Excel Export
-
-\* PDF Reports
-
-
-
-\## Enhanced Profiles
-
-
-
-\* Resume Upload
-
-\* Skills Tracking
-
-\* Application History
-
-
-
-\## Advanced Administration
-
-
-
-\* Dynamic Form Builder
-
-\* Content Management System
-
-\* Multi-language Support
-
-
-
-\---
-
-
-
-\# 👨‍💻 Author
-
-
-
-Akilan
-
-
-
-GitHub: https://github.com/your-github-username
-
-
-
-LinkedIn: https://linkedin.com/in/your-linkedin-profile
-
-
-
-\---
-
-
-
-\# 📄 License
-
-
+# 📄 License
 
 This project is licensed under the MIT License.
 
+Copyright © 2026 Akilan
 
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files.
 
-Feel free to use, modify, and distribute this project for educational and non-commercial purposes.
-
-
-
+```
+```
