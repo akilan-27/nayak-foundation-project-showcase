@@ -186,12 +186,12 @@ Super Administrators can:
 ## Home Page
 
 
-![Home Page](screenshots/<img width="1918" height="923" alt="image" src="https://github.com/user-attachments/assets/002abf1d-00ae-4b30-ade1-93050828d85d" />)
+<img width="1918" height="923" alt="image" src="https://github.com/user-attachments/assets/002abf1d-00ae-4b30-ade1-93050828d85d" />
 
 ## Login Page
 
-(<img width="1918" height="930" alt="image" src="https://github.com/user-attachments/assets/c9583e1f-82fe-4936-8e7d-57722df809b6" />
-)
+<img width="1918" height="930" alt="image" src="https://github.com/user-attachments/assets/c9583e1f-82fe-4936-8e7d-57722df809b6" />
+
 
 ## Volunteer Registration
 
