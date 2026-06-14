@@ -185,27 +185,28 @@ Super Administrators can:
 
 ## Home Page
 
-![Home Page](screenshots/home-page.png)
+
+![Home Page](screenshots/<img width="1918" height="923" alt="image" src="https://github.com/user-attachments/assets/002abf1d-00ae-4b30-ade1-93050828d85d" />)
 
 ## Login Page
 
-![Login Page](screenshots/login-page.png)
+![Login Page](screenshots/<img width="1918" height="930" alt="image" src="https://github.com/user-attachments/assets/c9583e1f-82fe-4936-8e7d-57722df809b6" />
+)
 
 ## Volunteer Registration
 
-![Volunteer Registration](screenshots/volunteer-form.png)
+![Volunteer Registration](screenshots/<img width="1917" height="927" alt="Screenshot 2026-06-14 144834" src="https://github.com/user-attachments/assets/ec279238-3fe6-45c2-abf0-7286b5d3ce6a" />
+)
 
 ## Internship Registration
 
-![Internship Registration](screenshots/internship-form.png)
-
-## Admin Dashboard
-
-![Admin Dashboard](screenshots/admin-dashboard.png)
+![Internship Registration](screenshots/<img width="1917" height="927" alt="Screenshot 2026-06-14 145147" src="https://github.com/user-attachments/assets/195fd2a3-581b-449d-b675-d5ee15ed01cd" />
+)
 
 ## Super Admin Panel
 
-![Super Admin Panel](screenshots/super-admin-dashboard.png)
+![Super Admin Panel](screenshots/<img width="1917" height="922" alt="admin dash" src="https://github.com/user-attachments/assets/40c25ee6-b2f2-4d11-bd3c-43cb9aeeb99d" />
+)
 
 ---
 
